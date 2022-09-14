@@ -1,23 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 html {
-    background-color: snow;
+    background-color: rgb(241, 236, 236);
+}
+header{
+    text-align: center;
+    font-family: 'Nabla', cursive;
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width:100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    gap: 2vw;
+    gap: 20px;
 }
-
+.cosas{
+    display: flex;
+    gap: 2vw;
+    margin: 0;
+    padding: 0;
+}
 
 .container{
     display: grid;
     width: 720px;
     height: 720px;
-    border: 2px solid black;
+    background-color: white;
+    border: 2px solid snow;
+    box-shadow: 0 0 1rem rgb(138, 135, 135);
 }
 .options {
     height: 720px;
@@ -48,5 +62,32 @@ body{
 
 .color::-webkit-color-swatch{
     border-radius: 50%;
-    border: 3px solid #e0dddd;
+    border: 3px solid white;
 }
+
+button{
+    border: none !important;
+    box-shadow: none!important;
+     background: rgb(255,238,43);
+  background: linear-gradient(90deg, rgba(255,238,43,1) 0%, rgba(0,212,255,1) 100%); 
+    width: 50%;
+    transition: none!important;
+    color: #20202a;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 30px;
+      font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+  }
+  #value{
+    color:#20202a;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+
+  #myRange{
+    cursor: pointer;
+  }
