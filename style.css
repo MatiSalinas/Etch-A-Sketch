@@ -9,6 +9,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    gap: 2vw;
 }
 
 
@@ -18,9 +19,34 @@ body{
     height: 720px;
     border: 2px solid black;
 }
+.options {
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2vh;
+}
 
 .square{
     padding: 0;
     margin: 0;
-    border: 1px solid blueviolet;
+
+}
+
+.color {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.color::-webkit-color-swatch{
+    border-radius: 50%;
+    border: 3px solid #e0dddd;
 }
