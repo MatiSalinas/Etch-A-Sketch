@@ -4,14 +4,10 @@ const output = document.getElementById('value');
 const clear = document.getElementById('clear')
 const rMode = document.getElementById('rainbow')
 
-// const darken = document.getElementById('shadow')
-// const lighten = document.getElementById('light')
-
 output.textContent = `${slider.value}x${slider.value} `;
 let size = slider.value;
 let rainbow = false;
-// let dark = false;
-// let light = false;
+
 
 clear.addEventListener('click', draw);
 
@@ -19,9 +15,6 @@ rMode.addEventListener('click',() =>    {
     rainbow = !rainbow;
 });//toggle rainbow mode on click
 
-// darken.addEventListener('click',() =>    {
-//     dark = !dark;
-// });
 
 //updates text and value of the slider
 slider.oninput =function(){
