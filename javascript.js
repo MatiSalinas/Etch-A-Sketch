@@ -8,6 +8,16 @@ output.textContent = `${slider.value}x${slider.value} `;
 let size = slider.value;
 let rainbow = false;
 
+let pressed = false;
+
+window.addEventListener('mousedown', ()=>{
+    pressed=true;
+})
+
+window.addEventListener('mouseup', ()=>{
+    pressed=false;
+})
+
 
 clear.addEventListener('click', draw);
 
@@ -41,12 +51,13 @@ function mouseDetection(){
     const squares = document.querySelectorAll('.square');
     squares.forEach(square => {
         square.addEventListener('mouseover',() =>{
+            if(pressed){
             if(!rainbow){
             square.style.backgroundColor = document.getElementById('cvalue').value;
         }else{
             square.style.backgroundColor = "#" + ((1<<24)*Math.random() | 0).toString(16) // random color value generator
         }
-        })
+        }})
     })
 }
 
