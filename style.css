@@ -65,11 +65,28 @@ body{
     border: 3px solid white;
 }
 
-button{
+.on{
     border: none !important;
     box-shadow: none!important;
      background: rgb(255,238,43);
   background: linear-gradient(90deg, rgba(255,238,43,1) 0%, rgba(0,212,255,1) 100%); 
+    width: 50%;
+    transition: none!important;
+    color: #20202a;
+    padding: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 30px;
+      font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+  }
+  .off {
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(241, 236, 236, 0), rgba(241, 236, 236, 0)), linear-gradient(90deg, rgba(255,238,43,1) 0%, rgba(0,212,255,1) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px rgb(241, 236, 236) inset;
     width: 50%;
     transition: none!important;
     color: #20202a;
@@ -80,6 +97,9 @@ button{
       font-weight: bold;
     font-size: 20px;
     width: 100%;
+  }
+  button:hover{
+    box-shadow: 0 0 .4rem #000000;
   }
   #value{
     color:#20202a;

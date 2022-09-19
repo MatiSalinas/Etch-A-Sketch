@@ -19,9 +19,15 @@ window.addEventListener('mouseup', ()=>{
 })
 
 
-clear.addEventListener('click', draw);
+clear.addEventListener('click', ()=>{
+    draw();
+    clear.classList.toggle('on');
+    clear.classList.toggle('off');
+});
 
 rMode.addEventListener('click',() =>    {
+    rMode.classList.toggle('on')
+    rMode.classList.toggle('off')
     rainbow = !rainbow;
 });//toggle rainbow mode on click
 
