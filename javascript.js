@@ -19,11 +19,7 @@ window.addEventListener('mouseup', ()=>{
 })
 
 
-clear.addEventListener('click', ()=>{
-    draw();
-    clear.classList.toggle('on');
-    clear.classList.toggle('off');
-});
+clear.addEventListener('click', draw);
 
 rMode.addEventListener('click',() =>    {
     rMode.classList.toggle('on')
