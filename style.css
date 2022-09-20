@@ -6,6 +6,7 @@ html {
 header{
     text-align: center;
     font-family: 'Nabla', cursive;
+    text-shadow: 0 0 0.4rem rgb(0,0,0);
 }
 body{
     display: flex;
