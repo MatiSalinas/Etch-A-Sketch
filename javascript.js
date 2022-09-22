@@ -50,7 +50,7 @@ slider.oninput =function(){
     
 }
 function darken(rgb){
-    rgbArr = rgb.substring(4,rgb.length-1).replace(/ /g,'').split(',');
+    rgbArr = rgb.substring(4,rgb.length-1).replace(/ /g,'').split(','); // converts rgb(r,g,b) string to array with rgb values
     
     rgbNum = rgbArr.map(num => parseInt(num*0.9,10));
 
